@@ -1,0 +1,113 @@
+/* General layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  margin: 0;
+  width: 300px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #007acc;
+  text-align: center;
+}
+
+/* Input + Button */
+input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 8px;
+  background-color: #007acc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Result box */
+#result {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 8px;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+/* Status message */
+#statusMsg {
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#statusMsg.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#statusMsg.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+small {
+  font-size: 10px;
+}
+small a {
+  text-decoration: none;
+  color: #777;
+}
+
+#statusMsg.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#statusMsg.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A Chrome extension to search, save, and download vocabulary with meanings and personal notes." />
+  <meta name="author" content="Kumar Ankesh" />
+  <meta name="theme-color" content="#007acc" />
+  <title>Vocab Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Vocab Builder</h1>
+
+    <input type="text" id="wordInput" placeholder="Enter a word..." />
+    <button id="searchBtn">Search</button>
+
+    <div id="result" class="hidden">
+      <h2 id="wordTitle"></h2>
+      <p><strong>Meaning:</strong> <span id="definition"></span></p>
+      <p><strong>Example:</strong> <span id="example"></span></p>
+      
+      <textarea id="noteInput" placeholder="Add your note..."></textarea>
+      <div class="button-group">
+      <button id="saveBtn">Save to My Vocab</button>
+      <button id="downloadBtn">Download My Vocab (.txt)</button>
+      </div>
+    </div>
+
+    <div id="statusMsg" class="hidden"></div>
+
+    <hr />
+    <small>
+      <a href="https://www.flaticon.com/free-icons/english" target="_blank" title="english icons" rel="noopener">
+        Made by heart
+      </a>
+    </small>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Vocab Builder",
+  "version": "1.0",
+  "description": "Search and save vocabulary with meaning and notes.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/dictionary.png"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.dictionaryapi.dev/"]
+ 
+}
